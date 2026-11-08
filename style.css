@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+html{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: black;
+    color: green;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    width: calc(100% - 10px);
+    height: calc(100dvh - 20px);
+    overflow: hidden;
+}
+
+section{
+    border: 1px solid green;
+    padding:  10px 50px;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    scrollbar-color: green green;
+}
+p{
+    font-size: 1.3rem;
+}
+
+.contact{
+    display: flex;
+    gap: 5px
+}
+
+a{
+    color: green
+}
+
+
+.post-section{
+    display: flex;
+    flex-wrap: wrap;
+}
