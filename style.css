@@ -22,20 +22,37 @@ body{
     width: calc(100% - 10px);
     height: calc(100dvh - 20px);
     overflow: hidden;
+
+    cursor: url("pointer.png"), auto;
+}
+
+button{
+    background: black;
+    border: 1px solid green;
+    color: green;
+}
+button:hover{
+    background: green;
+    border: 1px solid black;
+    color: black;
+    cursor: url("hand.png"), auto;
 }
 
 section{
     border: 1px solid green;
-    padding:  10px 50px;
     width: 100%;
     height: 100%;
     overflow: scroll;
     scrollbar-color: green green;
 }
 p{
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
+.line{
+    border: 1px dashed green;
+    width: 100%;
+}
 .contact{
     display: flex;
     gap: 5px
@@ -45,8 +62,27 @@ a{
     color: green
 }
 
-
 .post-section{
     display: flex;
     flex-wrap: wrap;
+}
+
+.header{
+    width: 100%;
+    height: 20px;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    padding:  10px 50px;
+    width: 100%;
+    height: calc(100% - 20px);
+    overflow: scroll;
+    scrollbar-color: green green;
+}
+
+.header .title{
+    color: black
 }
